@@ -17,6 +17,14 @@
       <label>Email (required)</label> 
       <input id="name" class="form-control" type="text" ng-model="contact.email" required> 
     </p>
+	<p>
+      <label>Password (required)</label> 
+      <input id="name" class="form-control" type="text" ng-model="contact.password" required> 
+    </p>
+	<p>
+      <label>Repeat Password (required)</label> 
+      <input id="name" class="form-control" type="text" ng-model="contact.repeatpassword" required> 
+    </p>
     <p>
       <label>Phone (Mobile)</label> 
       <input id="name" class="form-control" type="text" ng-model="contact.phone.mobile"> 
@@ -32,6 +40,14 @@
     <p>
       <label>Twitter Handle</label> 
       <input id="name" class="form-control" type="text" ng-model="contact.twitter"> 
+    </p>
+	<p>
+      <label>Access Level</label> 
+      <select name="name">
+		<option value="user">User</option>
+		<option value="manager">Manager</option>
+		<option value="admin">Admin</option>
+	  </select>
     </p>
     <p>
       <button style="margin-top:20px" class="btn btn-default" ng-click="saveContact(contact)">Save</button>
