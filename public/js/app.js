@@ -18,6 +18,10 @@ angular.module("contactsApp", ['ngRoute'])
                 controller: "EditContactController",
                 templateUrl: "contact.html"
             })
+			.when("/login", {
+                controller: "EditContactController",
+                templateUrl: "login.html"
+            })
             .otherwise({
                 redirectTo: "/"
             })
@@ -113,4 +117,10 @@ angular.module("contactsApp", ['ngRoute'])
         $scope.deleteContact = function(contactId) {
             Contacts.deleteContact(contactId);
         }
+    })
+	.controller("LoginController", function($scope, $location, Contacts) {
+        $scope.back = function() {
+            $location.path("#/");
+        }
+
     });
