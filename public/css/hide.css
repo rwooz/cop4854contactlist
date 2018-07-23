@@ -1,0 +1,4 @@
+/*hide role-specific div html*/
+div.anonymous, div.user, div.admin, div.manager {
+display: none;
+}
